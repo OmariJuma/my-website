@@ -1,0 +1,15 @@
+.skills-container{
+    display: block;
+    margin-top: 10rem;
+}
+.skills-title{
+    text-align: center;
+    color: #000;
+    font-family: "Holtwood One SC", serif;
+    font-size: 31px;
+    /* font-style: normal; */
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5rem;
+  
+}

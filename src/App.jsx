@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navigation from './Components/Navigation'
+import { Container } from "react-bootstrap";
+import "./App.css";
+import Navigation from "./Components/Navigation";
+import CoverImage from "./Components/CoverImage";
+import Skills from "./Components/Skills";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Navigation/>
+      <Navigation />
+
+      <Container>
+        <CoverImage />
+        <Skills/>
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
