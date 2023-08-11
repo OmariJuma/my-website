@@ -9,7 +9,7 @@ function App() {
     <>
       <Navigation />
 
-      <Container>
+      <Container fluid={true}>
         <CoverImage />
         <Skills/>
       </Container>
