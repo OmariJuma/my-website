@@ -4,7 +4,8 @@
 }
 .skill-image {
   /* width:290px; */
-  height: 300px;
+  height: 250px;
+  padding: 20px;
 }
 .skill-title {
   text-align: center;

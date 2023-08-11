@@ -3,6 +3,8 @@ import "./App.css";
 import Navigation from "./Components/Navigation";
 import CoverImage from "./Components/CoverImage";
 import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -11,8 +13,14 @@ function App() {
 
       <Container fluid={true}>
         <CoverImage />
-        <Skills/>
       </Container>
+      <Container>
+        <Skills />
+      </Container>
+      <Container>
+        <Projects />
+      </Container>
+      <Footer/>
     </>
   );
 }

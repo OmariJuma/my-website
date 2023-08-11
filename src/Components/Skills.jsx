@@ -17,8 +17,8 @@ const Skills = () => {
     { skill: "CSS3", proficiency: 90, image: CssImage },
 ];
   return (
-    <div className="skills-container">
-      <h2 className="skills-title" id="skills">Skills</h2>
+    <div className="skills-container" id="skills">
+      <h2 className="skills-title" >Skills</h2>
       <Row>
       {skills.map(skill=>(<SkillItem skill={skill.skill} proficiency={skill.proficiency} image={skill.image}/>))}
       </Row>

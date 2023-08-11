@@ -2,24 +2,24 @@ import React from "react";
 import { Container, Col, Row, Image, Card } from "react-bootstrap";
 import Background from "../assets/coverImage.png";
 import Myself from "../assets/omarion.jpg";
-import "./CoverImage.css"; // Import your custom CSS file
+import Styles from "./CoverImage.module.css"; // Import your module CSS file
 
 const CoverImage = () => {
   return (
-    <Card className="bg-dark text-white cover-section" id="card">
+    <Card className={`bg-dark text-white ${Styles.coverSection}`} id="home">
       <Card.Img src={Background} alt="Card image" />
-      <Card.ImgOverlay >
+      <Card.ImgOverlay>
         <Row>
           <Col>
-            <Card.Title className="intro">
+            <Card.Title className={Styles.intro}>
               Hello 👋 I AM OMAR JUMA & AM A SOFTWARE DEVELOPER
             </Card.Title>
-            <Card.Text className="intro-sub">
+            <Card.Text className={Styles.introSub}>
               I develop full-stack user friendly websites using latest tech
             </Card.Text>
           </Col>
-          <Col style={{display:"flex", justifyContent:"center",marginTop:50}}>
-            <Image className="myImage" src={Myself} />
+          <Col style={{display:"flex", justifyContent:"center"}}>
+            <Image className={Styles.myImage} src={Myself} />
           </Col>
         </Row>
       </Card.ImgOverlay>

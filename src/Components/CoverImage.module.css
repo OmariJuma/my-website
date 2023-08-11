@@ -6,7 +6,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
-  margin-top: 50px;
+  margin-top: 200px;
 }
 
 .intro-sub {
@@ -17,7 +17,7 @@
 }
 
 /* Cover section styles */
-.cover-section {
+.coverSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
 }
 
 /* Background image */
-.cover-section img {
+.coverSection img {
   height: 550px;
 }
 
@@ -37,13 +37,38 @@
 }
 
 /* Responsive styles for smaller screens */
+@media (min-width:394px) {
+  .coverSection img {
+    height: 500px;
+  }
+
+}
+
+@media (Min-width: 768px) {
+
+  .coverSection img {
+    height: 550px;
+  }
+  .intro{
+    margin-top: 30px;
+  }
+  .introSub{
+    margin-top: 10px;
+  }
+}
 @media (max-width: 768px) {
   .myImage {
     max-height: 400px;
     border-radius: 300px 300px 0px 0px;
   }
 
-  .cover-section img {
+  .coverSection img {
     height: 650px;
+  }
+  .intro{
+    margin-top: 30px;
+  }
+  .introSub{
+    margin-top: 10px;
   }
 }
